@@ -14,7 +14,6 @@
 | Expr	 : Atom | Number | List | Call
 |
 | TODO(Fors):
-| - I broke scope naming! Needs fixing asap!
 | - There are a number of places where, instead of cloning, ownership can be 
 |   moved. As long as pointer to the moved value is set to NULL, delete_expr 
 |	will not free it. Example in 'cdr':
