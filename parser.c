@@ -607,7 +607,7 @@ Expr *eval_cond(Env *env, Expr *expr) {
 		}
 	}
 	transform_error(expr, "Function 'cond' expected an 'else' clause.");
-	return NULL; // NOTE(Fors): transform_error retuns.
+	return expr;
 }
 
 Expr *eval_and(Env *env, Expr *expr) {
